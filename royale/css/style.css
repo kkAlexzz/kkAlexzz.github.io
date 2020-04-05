@@ -1,0 +1,218 @@
+
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background: #151515 /*url(images/img01.png)*/ repeat;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	color: #808080;
+}
+
+.scale {
+    transition: 1s; /* Время эффекта */
+   }
+   .scale:hover {
+    transform: scale(1.2); /* Увеличиваем масштаб */
+   }
+
+
+.container_slider_css{margin:50px auto;width:500px;height:300px;overflow:hidden;position:relative}
+.photo_slider_css{position:absolute;animation:round 16s infinite;opacity:0;width:100%}
+@keyframes round {
+25%{opacity:1}
+40%{opacity:0}
+}
+img:nth-child(1){animation-delay:12s}
+img:nth-child(2){animation-delay:8s}
+img:nth-child(3){animation-delay:4s}
+img:nth-child(4){animation-delay:0}
+
+@media(min-width:0px) and (max-width:320px) {
+.container_slider_css{width:80%;height:190px}
+}
+@media(min-width:321px) and (max-width:480px) {
+.container_slider_css{width:80%;height:190px}
+}
+
+.container_slider_css2{margin:50px auto;width:500px;height:400px;overflow:hidden;position:relative}
+.photo_slider_css{position:absolute;animation:round 16s infinite;opacity:0;width:100%}
+@keyframes round {
+25%{opacity:1}
+40%{opacity:0}
+}
+img:nth-child(1){animation-delay:12s}
+img:nth-child(2){animation-delay:8s}
+img:nth-child(3){animation-delay:4s}
+img:nth-child(4){animation-delay:0}
+
+@media(min-width:0px) and (max-width:320px) {
+.container_slider_css{width:80%;height:190px}
+}
+@media(min-width:321px) and (max-width:480px) {
+.container_slider_css{width:80%;height:190px}
+}
+
+
+
+
+h1, h2, h3 {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 200;
+	color: #4F4F4F;
+}
+
+p, ol, ul {
+	margin-top: 0px;
+}
+
+p {
+	line-height: 200%;
+}
+
+strong {
+	font-weight: 700;
+}
+
+a {
+	color: #292929;
+}
+
+.alignleft {
+	float: left;
+	margin-top: 5px;
+	margin-right: 30px;
+}
+
+
+/* Header */
+
+#header-wrapper {
+	overflow: hidden;
+	height: 75px;
+	background: url(images/img01.png) repeat-x left top;
+}
+
+/* Wrapper */
+
+#wrapper {
+	overflow: hidden;
+	padding: 50px 0px;
+	background: #FFFFFF;
+}
+
+/* Copyright */
+
+#copyright {
+	overflow: hidden;
+	height: 150px;
+}
+
+#copyright p {
+	padding: 50px 0px 0px 0px;
+	text-align: center;
+	font-size: 11pt;
+	color: #555;
+}
+
+#copyright a {
+	color: #888;
+}
+
+/* Image style */
+
+.image-style1 {
+	padding: 9px;
+	background: #FFFFFF;
+	border: 1px solid #B8B8B8;
+}
+
+/* Reusable Buttons */
+
+.button {
+	text-align: center;
+}
+
+.button a {
+	display: inline-block;
+	outline: 0;
+	white-space: nowrap;
+	margin-top: 20px;
+	padding: 10px 30px 10px 30px;
+	background: #23272D;
+	box-shadow: inset 0px 0px 0px 1px #363E46, 0px 2px 3px 0px rgba(0,0,0,0.25);
+	border: solid 1px #363E46;
+	border-radius: 6px;
+	background-image: -moz-linear-gradient(top, #686E76, #21252B);
+	background-image: -webkit-linear-gradient(top, #686E76, #21252B);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#686E76), to(#21252B));
+	background-image: -ms-linear-gradient(top, #686E76, #21252B);
+	background-image: -o-linear-gradient(top, #686E76, #21252B);
+	background-image: linear-gradient(top, #686E76, #21252B);
+	text-decoration: none;
+	text-shadow: -1px -1px 0 rgba(0,0,0,0.5);
+	font-size: 12pt;
+	color: #FFFFFF;
+}
+
+/* List style1 */
+
+.list-style1 {
+	margin: 0px;
+	padding: 30px 0px 0px 0px;
+	list-style: none;
+}
+
+.list-style1 li {
+	padding: 0px 0px 15px 0px;
+}
+
+
+.slide {
+        width: 500px;
+        height: 300px;
+        border: 1px solid #888;
+        position: relative;
+        text-align: center;
+    }
+	.slide  input {
+        display: none;
+    }
+
+    .slide  input + label {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 8px;
+        background: rgba(90, 90, 90, 0.8);
+        border: 2px solid rgba(190, 190, 190, 0.8);
+
+        cursor: pointer;
+
+        z-index: 100;
+        position: relative;
+
+        margin-right: 4px;
+        top: 90%;
+
+        transition: background 0.8s ease-out 0s;
+    }
+
+    .slide  input + label:hover {
+        background: rgba(250, 250, 250, 0.8);
+    }
+
+    .slide  input:checked + label {
+        background: rgba(220, 220, 220, 0.8);
+    }
+	
+    .slide  div {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+
+ul {padding-left: 40px; margin-top: 1em; margin-bottom: 1em;}
